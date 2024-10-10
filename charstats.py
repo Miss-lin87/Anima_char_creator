@@ -7,23 +7,23 @@ emptydic = {
     "weapon":""
 }
 
-import weapons
 import armor
+import weapons
 
 char1 = {
     "level":2,
     "defence":40,
     "dodge":80,
     "attack":25,
-    "armor":"",
-    "weapon":club
-}
+    "armor": armor.Half_plate,
+    "weapon": weapons.club
+    }
 
 char2 = {
     "level":4,
     "defence":60,
     "dodge":100,
     "attack":65,
-    "armor":"",
-    "weapon":short_Sword
+    "armor":armor.Leather,
+    "weapon": weapons.short_sword
 }

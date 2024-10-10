@@ -31,13 +31,13 @@ def level_defence():
         else:
             break
 
-import char
-defence = char.char1["defence"]
+import charstats
+defence = charstats.char1["defence"]
 level_dif = int(0)
-level = char.char1["level"]
-attack = char.char1["attack"]
-Feats_of_sth = char.char1["Feats_of_sth"]
-Wear_armor = char.char1["Wear_armor"]
+level = charstats.char1["level"]
+attack = charstats.char1["attack"]
+Feats_of_sth = charstats.char1["Feats_of_sth"]
+Wear_armor = charstats.char1["Wear_armor"]
 
 level_up()
 level_defence()

@@ -1,7 +1,7 @@
 # initiate comabt
 # calculate to hit etc
 
-from dice import Rolldice
+import dice
 import charstats
 import weapons
 
@@ -16,4 +16,4 @@ def attack():
 
     return x, y, h
 
-print(attack())
+print(dice.openroll(100,90))

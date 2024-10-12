@@ -27,3 +27,15 @@ char2 = {
     "armor":armor.Leather,
     "weapon": weapons.short_sword
 }
+
+
+
+def copy():
+    new={}
+    new = emptydic.copy()
+    f = open("test.txt")
+    f.write, str(new, "a")
+    f.close
+    print (new)
+
+copy()

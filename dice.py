@@ -1,15 +1,15 @@
 from random import randint as random
 
 def roll():
-        x = input("type something ")
+        x = input("what number of sides to roll? ")
         x = int(x)
-        print(rolldice(x))
+        return(rolldice(x))
 
 def rolldice(select):
         if select == 10:
                 return openroll10(10)
         elif select == 100:
-                return openroll100(100,90)
+                return openroll100(100,90, 3)
         else:
                 return otherdice(select)
 
@@ -17,15 +17,18 @@ def rolldice(select):
 def otherdice(dice):
         return random(1, dice)
 
-def openroll100(dice, dice_target):
+def openroll100(dice, dice_target, dice_min):
         dice_target = dice_target
+        dice_min = dice_min # -3 if skill enough
         total = random(1, dice)
         #print("total ", str(total)) # just for testing
         if total >= dice_target and dice_target != dice:
                 #print("target " + str(dice_target)) # just for testing
                 dice_target += 1
                 return total + openroll100(dice, dice_target)
-                
+        elif total <= dice_min:
+                print("the roll is a faliure")
+                return total
         else:
                 return total
 

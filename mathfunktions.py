@@ -1,6 +1,6 @@
 import math
 
-def test(number):
+def flatten(number):
     if number > 9 and number < 100:
         number = int(str(number)[:1])
         number = int(number*10)
@@ -10,6 +10,4 @@ def test(number):
         number = int(number*10)
         return number
     else:
-        return number
-    
-print(test(256))
+        return 0

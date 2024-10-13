@@ -10,5 +10,5 @@ class Character:
         self.armor = armor
         self.weapons = weapons
 
-char1 = Character(2,40,80,25,armor.Half_plate,weapons.club)
-char2 = Character(4,60,100,80,armor.Leather,weapons.short_sword)
+char1 = Character(2,40,80,100,armor.Half_plate,weapons.club)
+char2 = Character(4,25,25,60,armor.Padded,weapons.short_sword)

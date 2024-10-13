@@ -9,18 +9,17 @@ def rolldice(select):
         if select == 10:
                 return openroll10(10)
         elif select == 100:
-                return openroll100(100,90, 3)
+                return openroll100(100,90,3)
         else:
                 return otherdice(select)
 
-
 def otherdice(dice):
-        return random(1, dice)
+        return random(1,dice)
 
 def openroll100(dice, dice_target, dice_min):
         dice_target = dice_target
         dice_min = dice_min # -3 if skill enough
-        total = random(1, dice)
+        total = random(1,dice)
         #print("total ", str(total)) # just for testing
         if total >= dice_target and dice_target != dice:
                 #print("target " + str(dice_target)) # just for testing
@@ -33,7 +32,7 @@ def openroll100(dice, dice_target, dice_min):
                 return total
 
 def openroll10(dice):
-        roll= random(1, dice)
+        roll= random(1,dice)
         if roll == 10:
                 #print(roll) # for testing the code
                 return roll+3

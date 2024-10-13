@@ -1,19 +1,20 @@
 # initiate comabt
 # calculate to hit etc
 
-import dice
+from dice import rolldice
 import charstats
-import weapons
+import weapons as weapons
 
 
-def attack():
-    x = charstats.char1.get("attack") + Rolldice(100)
-    y = charstats.char2.get("defence") + Rolldice(100)
+def attack(x):
+    x = charstats.char1.get("attack") + rolldice(100)
+    y = charstats.char2.get("defence") + rolldice(100)
     h = charstats.char1.get("weapon")
     z = charstats.char2.get("armor")
 
    # if x-y > 0:
 
-    return x, y, h
+    return x
 
-print(dice.openroll(100,90))
+x=0
+print(attack(x))

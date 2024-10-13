@@ -1,21 +1,10 @@
-# Empty weapon template
-# "damage":
-# "speed":
-# "prim_attack":
-# "seco_attack":
-# "pressence":
+class weapons:
+    def __init__(self,damage,speed,prim_attack,seco_attack,pressence):
+        self.damage = int(damage)
+        self.speed = int(speed)
+        self.prim_attack = str(prim_attack)
+        self.seco_attack = str(seco_attack)
+        self.pressence = int(pressence)
 
-club = {
-    "damage":30,
-    "speed":0,
-    "prim_attack":"impact",
-    "pressence":15
-}
-
-short_sword = {
-    "damage":40,
-    "speed":15,
-    "prim_attack":"thrust",
-    "seco_attack":"cut",
-    "pressence":20
-}
+club = weapons(30, 0, "impact", "none", 15)
+short_sword = weapons(40, 15, "thrust", "cut", 20)

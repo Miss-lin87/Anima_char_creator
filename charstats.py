@@ -1,41 +1,14 @@
-emptydic = {
-    "level":0,
-    "defence":0,
-    "dodge":0,
-    "attack":0,
-    "armor":"",
-    "weapon":""
-}
-
-import armor
 import weapons
+import armor
 
-char1 = {
-    "level":2,
-    "defence":40,
-    "dodge":80,
-    "attack":25,
-    "armor": armor.Half_plate,
-    "weapon": weapons.club
-    }
+class Character:
+    def __init__(self,lv,defe,dodge,attack,armor,weapons):
+        self.lv = int(lv)
+        self.defe= int(defe)
+        self.dodge = int(dodge)
+        self.attack = int(attack)
+        self.armor = armor
+        self.weapons = weapons
 
-char2 = {
-    "level":4,
-    "defence":60,
-    "dodge":100,
-    "attack":65,
-    "armor":armor.Leather,
-    "weapon": weapons.short_sword
-}
-
-
-
-def copy():
-    new={}
-    new = emptydic.copy()
-    f = open("test.txt")
-    f.write, str(new, "a")
-    f.close
-    print (new)
-
-copy()
+char1 = Character(2,40,80,25,armor.Half_plate,weapons.club)
+char2 = Character(4,60,100,80,armor.Leather,weapons.short_sword)

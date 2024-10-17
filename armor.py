@@ -23,7 +23,7 @@ Half_plate = armor(4,4,4,2,0,1,1)
 Scale_mail = armor(4,4,4,3,0,3,1)
 Light_plate = armor(5,4,5,3,0,3,1)
 Full_plate = armor(5,5,5,4,0,4,2)
-Fyll_heavy_plate = armor(6,6,6,4,0,4,2)
+Full_heavy_plate = armor(6,6,6,4,0,4,2)
 Full_field_plate = armor(7,7,7,4,0,4,2)
 
 # for future use, helmets
@@ -35,3 +35,13 @@ Full_field_plate = armor(7,7,7,4,0,4,2)
 # Mail_coif = (4,2,1,2,0,1,0)
 # Open_helm = (5,4,5,3,0,3,1)
 # Great_helm = (5,5,5,4,0,4,2)
+
+armor_list = ["Padded", "Leather", "Armored_longcoat", "Fur", "Complete_leather", "Hardened_leather", "Studded_leather", "Chainmail", "Breastplate", "Partial_plate", "Byrnie", "Half_plate", "Scale_mail", "Light_plate", "Full_plate", "Full_heavy_plate", "Full_field_plate"]
+
+def call_armor(armor, attribute):
+    attri = attribute
+    if armor in armor_list:
+        armor2 = globals()[armor]
+        return (armor2.__getattribute__(attri))
+    else:
+        return ("Armor not found")

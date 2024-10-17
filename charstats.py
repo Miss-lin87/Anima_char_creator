@@ -1,14 +1,13 @@
-import weapons
-import armor
+from attribut_functions import get_value_auto as gva
 
-class Character:
-    def __init__(self,lv,defe,dodge,attack,armor,weapons):
-        self.lv = int(lv)
-        self.defe= int(defe)
-        self.dodge = int(dodge)
-        self.attack = int(attack)
-        self.armor = armor
-        self.weapons = weapons
+class Empty_character:
+    def __init__(self,char):
+        self.lv = gva(char, "Level")
+        self.Block = gva(char, "Block")
+        self.dodge = gva(char, "Dodge")
+        self.attack = gva(char, "Attack")
+        self.armor = gva(char, "Armor")
+        self.weapons = gva (char, "Weapon")
 
-char1 = Character(2,40,80,100,armor.Half_plate,weapons.club)
-char2 = Character(4,25,25,60,armor.Padded,weapons.short_sword)
+class Characters():
+  char1 = Empty_character("char1")

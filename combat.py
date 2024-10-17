@@ -27,4 +27,3 @@ def attack():
     # print("the final damage is " + str(total_damage))
     return total_damage
 
-print(attack())

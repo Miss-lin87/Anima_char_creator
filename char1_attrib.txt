@@ -1,5 +1,5 @@
 # this is a liberary of all the values of the character in the file name
-
+Level : 1
 
 # Skills
     # Athletics
@@ -49,3 +49,21 @@ Music : 50
 Slight of hand : 0
 
     #Attributes
+Agility : 0
+Constitution : 0
+Dexterity : 15
+Stength : 0
+Intelligence : 25
+Perception : 0
+Power : 100
+Willpower : 0
+
+    #Combat
+Attack : 0
+Block : 0
+Dodge : 0
+Initiative : 0
+
+    # weapons and armor
+Weapon : Club
+Armor : Half_plate

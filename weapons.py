@@ -1,10 +1,20 @@
 class weapons:
-    def __init__(self,damage,speed,prim_attack,seco_attack,pressence):
-        self.damage = int(damage)
-        self.speed = int(speed)
-        self.prim_attack = str(prim_attack)
-        self.seco_attack = str(seco_attack)
-        self.pressence = int(pressence)
+    def __init__(self,Damage,Speed,Prim_attack,Seco_attack,Pressence):
+        self.Damage = int(Damage)
+        self.Speed = int(Speed)
+        self.Prim_attack = str(Prim_attack)
+        self.Seco_attack = str(Seco_attack)
+        self.Pressence = int(Pressence)
 
-club = weapons(30, 0, "impact", "none", 15)
-short_sword = weapons(40, 15, "thrust", "cut", 20)
+Club = weapons(30, 0, "impact", "none", 15)
+Short_sword = weapons(40, 15, "thrust", "cut", 20)
+
+weapon_list = ["Club", "Short_sword"]
+
+def call_weapon(weapon, attribute):
+    attri = attribute
+    if weapon in weapon_list:
+        weapon2 = globals()[weapon]
+        return (weapon2.__getattribute__(attri))
+    else:
+        return ("Armor not found")

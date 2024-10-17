@@ -1,6 +1,6 @@
 import fileinput
 import sys
-from attrib_lib import Skills
+from attrib_lib import Skills, Attributes as attr, Combat_skills as comb_skills, Stuff as stuff
 
 # this will start the process to replace the value of a skill. First get the character name, then the skill name and last the new value
 def new_value():
@@ -35,4 +35,38 @@ def look_skill(char,raw_skill):
     file.close()
     return output
 
-new_value()
+def get_value():
+    char = input("Please select the character? ")
+    select_stat = input("Please select the stat? ")
+    stat_type = find_type(select_stat)
+    value_number = stat_type[select_stat]
+    file = open(char + "_attrib.txt", "r")
+    read_line = file.readlines()
+    output_value = read_line[value_number]
+    output_value = output_value.strip(select_stat + ": ")
+    value = output_value.strip()
+    return value
+
+def get_value_auto(char, select_stat):
+    stat_type = find_type(select_stat)
+    value_number = stat_type[select_stat]
+    file = open(char + "_attrib.txt", "r")
+    read_line = file.readlines()
+    output_value = read_line[value_number]
+    output_value = output_value.strip(select_stat + ": ")
+    value = output_value.strip()
+    return value
+
+def find_type(select_stat):
+    if select_stat in Skills:
+        stat_type = Skills
+        return stat_type
+    elif select_stat in attr:
+        stat_type = attr
+        return stat_type
+    elif select_stat in stuff:
+        stat_type = stuff
+        return stat_type
+    else:
+        stat_type = comb_skills
+        return stat_type

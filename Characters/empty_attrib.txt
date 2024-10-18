@@ -1,35 +1,35 @@
 # this is a liberary of all the values of the character in the file name
-Level : 1
+Level : 0
 
 # Skills
     # Athletics
 Acrobatics : 0
-Athleticism : 75
-Climb : 100
-Jump : 25
-Ride : 50
+Athleticism : 0
+Climb : 0
+Jump : 0
+Ride : 0
 Swim : 0
 
     # Vigor
 Composure : 0
-Feats of str : 120
+Feats of str : 0
 Withstand pain : 0
 
     # Perception
 Notice : 0
-Sertch : 15
-Track : 25
+Sertch : 0
+Track : 0
 
     # Intellectual
 Animals : 0
 Appraisal : 0
 Herbal lore : 0
-Hisory : 100
+Hisory : 0
 M. appraisal : 0 
-Medicine : 75
+Medicine : 0
 Memorize : 0
 Navigation : 0
-Occult : 50
+Occult : 0
 Sciences : 0
 
     #Subterfuge
@@ -42,20 +42,20 @@ Trap lore : 0
 Stealth : 0
 
     #Creative
-Art : 100
-Dance : 25
+Art : 0
+Dance : 0
 Forging : 0
-Music : 50
+Music : 0
 Slight of hand : 0
 
     #Attributes
 Agility : 0
 Constitution : 0
-Dexterity : 15
+Dexterity : 0
 Stength : 0
-Intelligence : 25
+Intelligence : 0
 Perception : 0
-Power : 100
+Power : 0
 Willpower : 0
 
     #Combat
@@ -65,5 +65,5 @@ Dodge : 0
 Initiative : 0
 
     # weapons and armor
-Weapon : Club
-Armor : Half_plate
+Weapon : None
+Armor : None

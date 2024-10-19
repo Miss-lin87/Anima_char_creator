@@ -31,14 +31,14 @@ def openroll100(dice, dice_target, dice_min):
         else:
                 return total
 
-def openroll10(dice):
-        roll= random(1,dice)
+def openroll10():
+        roll= random(1,10)
         if roll == 10:
                 # print(roll) # for testing the code
-                return roll+3
+                return (roll+3)
         elif roll == 1:
                 # print(roll) # for testing the code
-                return roll-3
+                return (roll-3)
         else:
                 # print(roll) # for testing the code
                 return roll

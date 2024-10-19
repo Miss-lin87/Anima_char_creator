@@ -1,3 +1,7 @@
+import sys, os
+from os.path import dirname, join, abspath
+sys.path.insert(0, abspath(join(dirname(__file__), "..")))
+
 Skills = {
 # Skills_Athletics
 "Acrobatics":5, "Athleticism":6, "Climb":7, "Jump":8, "Ride":9, "Swim":10,
@@ -15,3 +19,4 @@ Skills = {
 Attributes = {"Level": 1,"Agility": 51,"Constitution": 52, "Dexterity": 53,"Strength": 54, "Inteligence": 55, "Perception": 56, "Power": 57, "Willpower": 58}
 Combat_skills = {"Attack": 61, "Block": 62, "Dodge": 63, "Initiative": 64}
 Stuff = {"Weapon": 67, "Armor": 68}
+Other = {"Max life": 0, "Current life": 0} # need fixing later when posible

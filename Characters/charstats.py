@@ -11,5 +11,3 @@ class Empty_character:
 
 class Characters():
   char1 = Empty_character("char1")
-
-print(Characters.char1.lv)

@@ -54,6 +54,3 @@ def find_type(select_stat):
     elif select_stat in stuff: stat_type = stuff; return stat_type
     elif select_stat in Other: stat_type = Other; return stat_type
     else: stat_type = comb_skills; return stat_type
-
-
-print(get_value_auto("", "Climb"))

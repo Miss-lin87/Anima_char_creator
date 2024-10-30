@@ -16,7 +16,8 @@ Skills = {
 # Skills_Creative 
 "Art":44, "Dance":45, "Forging":46, "Music":47, "Slight of hand":48
 }
-Attributes = {"Level": 1,"Agility": 51,"Constitution": 52, "Dexterity": 53,"Strength": 54, "Inteligence": 55, "Perception": 56, "Power": 57, "Willpower": 58}
+Attributes = {"Agility": 51,"Constitution": 52, "Dexterity": 53,"Strength": 54, "Inteligence": 55, "Perception": 56, "Power": 57, "Willpower": 58}
 Combat_skills = {"Attack": 61, "Block": 62, "Dodge": 63, "Initiative": 64}
 Stuff = {"Weapon": 67, "Armor": 68}
+Level = {"Level" : 1}
 Other = {"Max life": 0, "Current life": 0} # need fixing later when posible

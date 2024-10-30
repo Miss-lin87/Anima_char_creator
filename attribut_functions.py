@@ -1,13 +1,14 @@
 import fileinput
 import sys
 from pathlib import Path
-from Calulations.attrib_lib import Skills, Attributes as attr, Combat_skills as comb_skills, Stuff as stuff, Other
+from Calulations.attrib_lib import Skills, Attributes as attr, Combat_skills as comb_skills, Stuff as stuff, Other, Level as lv
 from Functions.Call_functions import autofill
 
-def new_value(char="", raw_skill=""):
+def new_value(char="", raw_skill="", raw_value=""):
     """this will start the process to replace the value of a skill. First get the character name, then the skill name and last the new value"""
     if char=="" or raw_skill=="": char, raw_skill = autofill(char=char, attri=raw_skill)
-    raw_value = input("What is the new value of the skill? ")
+    if raw_value=="": raw_value = input("What is the new value of the skill? ")
+    else: raw_value = raw_value
     file = get_file(char)
     old_skill, new_skill = skill_names(raw_skill,char,raw_value)
     replace(file,old_skill,new_skill)
@@ -26,7 +27,7 @@ def look_skill(char,raw_skill):
     skill_number = stat_type[raw_skill]
     open_file = open(get_file(char), "r+")
     read_line = open_file.readlines()
-    output = read_line[skill_number]
+    output = read_line[skill_number].strip("\n")
     open_file.close()
     return output
 
@@ -47,6 +48,7 @@ def find_type(select_stat):
     if select_stat in Skills: stat_type = Skills; return stat_type
     elif select_stat in attr: stat_type = attr; return stat_type
     elif select_stat in stuff: stat_type = stuff; return stat_type
+    elif select_stat in lv: stat_type = lv; return stat_type
     elif select_stat in Other: stat_type = Other; return stat_type
     else: stat_type = comb_skills; return stat_type
 
@@ -59,7 +61,7 @@ def skill_names(raw_skill, char, raw_value):
     value = read_line[number]
     old_skill = value.strip()
     skill_name = raw_skill + " : "
-    new_skill = skill_name + raw_value
+    new_skill = str(skill_name) + str(raw_value)
     open_file.close()
     return old_skill, new_skill
 

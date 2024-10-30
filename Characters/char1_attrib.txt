@@ -49,14 +49,14 @@ Music : 0
 Slight of hand : 0
 
     #Attributes
-Agility : 3
-Constitution : 0
-Dexterity : 0
-Strength : 0
-Inteligence : 0
-Perception : 0
-Power : 0
-Willpower : 0
+Agility : 8
+Constitution : 7
+Dexterity : 9
+Strength : 7
+Inteligence : 4
+Perception : 4
+Power : 5
+Willpower : 4
 
     #Combat
 Attack : 0

@@ -2,6 +2,7 @@ from pathlib import Path
 import shutil
 import attribut_functions as AF
 import Calulations.attrib_lib as AL
+import Functions.Roll_Attributes as roll_attri
 
 def char_pick(char=""):
     if char == "": char = input("What charaeter is being uppdated? ")
@@ -39,3 +40,18 @@ def New_Char():
         if option == "1": return New_Char()
         elif option == "2": return
         else: ValueError
+
+def roll_attributes(char):
+    rolls = roll_attri.menu()
+    skills_list = []
+    for x in AL.Attributes:
+        print(rolls)
+        selection = int(input("Please pick one of the numbers to assign to: " + str(x) + " "))
+        AF.new_value(char,x,selection)
+        rolls.remove(selection)
+    print("The allocation of stats is completed. These are the new stats: ")
+    for x in AL.Attributes:
+        skill = AF.look_skill(char,x)
+        print(skill)
+
+roll_attributes("char1")

@@ -67,3 +67,7 @@ Initiative : 0
     # weapons and armor
 Weapon : None
 Armor : None
+
+    #Other skills
+Max life = 
+Current life = 

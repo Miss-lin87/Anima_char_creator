@@ -2,8 +2,8 @@
 # calculate to hit etc
 
 import dice
-import charstats
-import mathfunktions as math
+import Characters.charstats as charstats
+import Calulations.mathfunktions as math
 
 roll = dice.rolldice
 char = charstats

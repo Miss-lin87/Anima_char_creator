@@ -31,7 +31,7 @@ def level_defence():
         else:
             break
 
-import charstats
+import Characters.charstats as charstats
 defence = charstats.char1["defence"]
 level_dif = int(0)
 level = charstats.char1["level"]

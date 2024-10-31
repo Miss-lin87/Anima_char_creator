@@ -2,6 +2,7 @@ import sys, os
 from os.path import dirname, join, abspath
 sys.path.insert(0, abspath(join(dirname(__file__), "..")))
 
+All_Skills = ["Skills","Attributes","Stuff","Level","Other"]
 Skills = {
 # Skills_Athletics
 "Acrobatics":5, "Athleticism":6, "Climb":7, "Jump":8, "Ride":9, "Swim":10,

@@ -1,5 +1,5 @@
 # this is a liberary of all the values of the character in the file name
-Level : 1
+Level : 0
 
 # Skills
     # Athletics
@@ -50,13 +50,13 @@ Slight of hand : 0
 
     #Attributes
 Agility : 5
-Constitution : 6
-Dexterity : 4
-Strength : 3
-Inteligence : 5
+Constitution : 8
+Dexterity : 9
+Strength : 9
+Inteligence : 6
 Perception : 4
 Power : 6
-Willpower : 7
+Willpower : 5
 
     #Combat
 Attack : 0
@@ -67,3 +67,7 @@ Initiative : 0
     # weapons and armor
 Weapon : None
 Armor : None
+
+    #Other skills
+Max life = 
+Current life = 

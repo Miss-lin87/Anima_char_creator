@@ -8,6 +8,7 @@ from attribut_functions import get_value_auto as gva
 
 
 def attribute_roll(char="", attri=""):
+    """This is used to roll a D10 against attribute and return the win of fail level"""
     if char=="" or attri == "": char, attri=autofill(char,attri)
     stat = gva(char,attri)
     roll = iD10()

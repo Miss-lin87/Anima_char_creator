@@ -1,7 +1,7 @@
 from pathlib import Path
-import shutil
-import attribut_functions as AF
+import Functions.attribut_functions as AF
 import char_uppdate as Cupp
+from PDF_export.Main import make_pdf
 import time
 
 char = "None"
@@ -27,7 +27,7 @@ def selection(select):
     elif select == "2": sleep(0.25); char = input("Change it to what character? "); return_menu(0.75)
     elif select == "3": sleep(0.25); Cupp.uppdate_list(char=char); return_menu(1)
     elif select == "4": sleep(0.25); AF.new_value(char=char); return_menu(1)
-    elif select == "5": sleep(0.25); print("Not yet working"); time.sleep(0.75); selection(menu())
+    elif select == "5": sleep(0.25); make_pdf(char=char); return_menu(1)
     elif select == "6": return
     else: ValueError
 

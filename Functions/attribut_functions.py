@@ -1,5 +1,8 @@
+import sys, os
+from os.path import dirname, join, abspath
+sys.path.insert(0, abspath(join(dirname(__file__), "..")))
+
 import fileinput
-import sys
 from pathlib import Path
 from Calulations.attrib_lib import Skills, Attributes as attr, Combat_skills as comb_skills, Stuff as stuff, Other, Level as lv
 from Functions.Call_functions import autofill
@@ -69,3 +72,6 @@ def get_file(char):
     """defines the file with tha corret pathway. Used to make the main code a bit shorter"""
     file = str(Path.cwd()) + "\\Characters\\" + char + "_attrib.txt"
     return file
+
+# def calculate_mod(char="",attri=""):
+

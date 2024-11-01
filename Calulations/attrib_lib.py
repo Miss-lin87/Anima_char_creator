@@ -22,3 +22,8 @@ Combat_skills = {"Attack": 61, "Block": 62, "Dodge": 63, "Initiative": 64}
 Stuff = {"Weapon": 67, "Armor": 68}
 Level = {"Level" : 1}
 Other = {"Max life": 0, "Current life": 0} # need fixing later when posible
+
+# test for attribute Modifiers
+Mods = {"1":-30, "2":-20, "3":-10, "4":-5, "5":0, "6":5, "7":5,
+        "8":10, "9":10, "10":15, "11":20, "12":20, "13": 25, "14":25,
+        "15":30, "16":35, "17":35, "18":40, "19":40, "20":45}

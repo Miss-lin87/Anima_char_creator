@@ -4,7 +4,7 @@ sys.path.insert(0, abspath(join(dirname(__file__), "..")))
 
 from dice import openroll10 as iD10
 from Functions.Call_functions import autofill
-from attribut_functions import get_value_auto as gva
+from Functions.attribut_functions import get_value_auto as gva
 
 
 def attribute_roll(char="", attri=""):

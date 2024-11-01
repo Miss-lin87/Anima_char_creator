@@ -1,4 +1,4 @@
-from attribut_functions import get_value_auto as gva
+from Functions.attribut_functions import get_value_auto as gva
 
 class Empty_character:
     def __init__(self,char):
